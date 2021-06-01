@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html>
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -196,7 +195,7 @@
       <div id="new_form" class="update_section">
          <div class="container">
             <h1 class="update_taital">Enviar um novo relatório</h1>
-            <form action="/action_page.php" method="post">
+            <form action="action_page.php" method="post">
                <div class="form-group">
                    <textarea required class="update_mail" placeholder="Nome da vítima" rows="5" id="name" name="name"></textarea>
                    <textarea required class="update_mail" placeholder="Idade" rows="5" id="age" name="age"></textarea>
@@ -204,8 +203,8 @@
                    <textarea required class="update_mail" placeholder="Telefone" rows="5" id="phone" name="phone"></textarea>
                    <textarea required class="update_mail" placeholder="Sintomas" rows="5" id="simptons" name="simptons"></textarea>
                    <textarea required class="update_mail" placeholder="Histórico de doenças" rows="5" id="diseases" name="diseases"></textarea>
-                  </div>
-               <div class="subscribe_bt"><a href="#">Enviar relatório</a></div>
+               </div>
+               <input type="submit"></input>
             </form>
          </div>
       </div>
@@ -226,16 +225,15 @@
                      <div class="location_text">
                         <ul>
                            <li>
-                              <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>
-                              <span class="padding_15">Location</span></a>
+                              <a href="https://github.com/gutovesco/covid-follower-php"><i class="fa fa-github-square" aria-hidden="true"><span class="padding_15">Github</span></a></i>
                            </li>
                            <li>
                               <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
-                              <span class="padding_15">Call +01 1234567890</span></a>
+                              <span class="padding_15">(19) 999707754</span></a>
                            </li>
                            <li>
                               <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
-                              <span class="padding_15">demo@gmail.com</span></a>
+                              <span class="padding_15">guto.vesco@hotmail.com</span></a>
                            </li>
                         </ul>
                      </div>
