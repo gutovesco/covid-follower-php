@@ -1,3 +1,4 @@
+<?php include_once"news.php";?>
 <html>
    <head>
       <meta charset="utf-8">
@@ -117,81 +118,36 @@
             </div>
          </div>
       </div>
-      <!-- about section end -->
-      <!-- doctor section start -->
-      <div class="doctors_section layout_padding">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="taital_main">
-                     <div class="taital_left">
-                        <div class="play_icon"><img src="images/play-icon.png"></div>
-                     </div>
-                     <div class="taital_right">
-                        <h1 class="doctor_taital">What doctors say..</h1>
-                        <p class="doctor_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="readmore_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- doctor section end -->
-      <!-- news section start -->
       <div class="news_section layout_padding">
          <div class="container">
             <div id="main_slider" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+                    <h1 class="news_taital">Últimas notícias</h1>
+                     <p class="news_text">Aqui você pode acompanhar as últimas notícias relacionadas ao coronavírus.</p>
                      <div class="news_section_2 layout_padding">
                         <div class="box_main">
                            <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
-                           <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-                     <div class="news_section_2 layout_padding">
-                        <div class="box_main">
-                           <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
-                           <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <h1 class="news_taital">Latest News</h1>
-                     <p class="news_text">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
-                     <div class="news_section_2 layout_padding">
-                        <div class="box_main">
-                           <div class="image_1"><img src="images/news-img.png"></div>
-                           <h2 class="design_text">Coronavirus is Very dangerous</h2>
-                           <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                           <div class="read_btn"><a href="#">Read More</a></div>
+                           <?php
+                           echo "<h2>{$news_title}</h2>"
+                           ?>
+                           <?php
+                           echo "<p>{$news_description}</p>"
+                           ?>
+                           <div class="read_btn">
+                           <?php
+                           echo "<a href={$news_link}>Ler mais</a>"
+                           ?>
+               
+                           </div>
                         </div>
                      </div>      
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-angle-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-angle-right"></i>
-               </a>
             </div>
             </div>
          </div>
       </div>
-      <!-- news section end -->
-      <!-- update section start -->
       <div id="new_form" class="update_section">
          <div class="container">
             <h1 class="update_taital">Enviar um novo relatório</h1>
@@ -203,8 +159,9 @@
                    <textarea required class="update_mail" placeholder="Telefone" rows="5" id="phone" name="phone"></textarea>
                    <textarea required class="update_mail" placeholder="Sintomas" rows="5" id="simptons" name="simptons"></textarea>
                    <textarea required class="update_mail" placeholder="Histórico de doenças" rows="5" id="diseases" name="diseases"></textarea>
+                   <input class="update_mail"type="submit"/>
                </div>
-               <input type="submit"></input>
+               
             </form>
          </div>
       </div>

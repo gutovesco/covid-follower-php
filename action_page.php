@@ -2,7 +2,6 @@
 <html>
     <body>
         <?php
-        echo "cheguei aqui";
         $name = $_POST["name"];
         $age = $_POST["age"];
         $address = $_POST["address"];
