@@ -1,4 +1,7 @@
-<?php include_once"news.php";?>
+<?php
+include "getData.php";
+?>
+
 <html>
    <head>
       <meta charset="utf-8">
@@ -87,9 +90,21 @@
             <div class="protect_section_2 layout_padding">
                <div class="row">
                   <div class="col-md-6">
-                     <h1 class="hands_text"><a href="#">Lave suas mãos <br>frequentemente</a></h1>
-                     <h1 class="hands_text_2"><a href="#">Mantenha <br>distanciamento social</a></h1>
-                     <h1 class="hands_text"><a href="#">Evitar tocar os<br>olhos, nariz e boca</a></h1>
+                     <h1 class="hands_text">
+                        <?php
+                           echo "<a>{$first_prevention_title}</a>"
+                        ?>
+                  </h1>
+                     <h1 class="hands_text_2">
+                     <?php
+                           echo "<a>{$second_prevention_title}</a>"
+                        ?>
+                     </h1>
+                     <h1 class="hands_text">
+                     <?php
+                           echo "<a>{$third_prevention_title}</a>"
+                        ?>
+                     </h1>
                   </div>
                   <div class="col-md-6">
                      <div class="image_2"><img src="images/img-2.png"></div>
@@ -107,8 +122,12 @@
                   <div class="about_img"><img src="images/img-1.png"></div>
                </div>
                <div class="col-md-6">
-                  <h1 class="about_taital">O que é Coronavirus?</span></h1>
-                  <p class="about_text">É um vírus que causa uma doença respiratória — a covid-19 — pelo agente coronavírus, identificado em dezembro de 2019 na China.</p>
+                  <?php
+                     echo "<h1>{$about_title}</h1>"
+                  ?>
+                  <?php
+                     echo "<span>{$about_description}</span>"
+                  ?>
                   <div class="read_bt">
                      <a 
                      href="https://www.uol.com.br/vivabem/noticias/redacao/2020/01/25/tire-suas-principais-duvidas-sobre-o-coronavirus-que-se-espalha-pelo-mundo.htm">
